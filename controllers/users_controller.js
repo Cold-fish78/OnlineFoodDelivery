@@ -121,6 +121,7 @@ module.exports.destroySession = function (req, res) {
     return res.redirect('/');
 }
 module.exports.recover = (req, res) => {
+    console.log(req.body.email);
     User.findOne({ email: req.body.email })
         .then(user => {
             if (!user) return res.status(401).json({ message: 'The email address ' + req.body.email + ' is not associated with any account. Double-check your email address and try again.' });

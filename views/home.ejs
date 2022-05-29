@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/css/home.css">
 <link rel="stylesheet" href="/css/chat_box.css">
+
 <div id="home-container">
     <section id="feed-posts">
             <h4>Posts</h4>
@@ -8,7 +9,12 @@
                 <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
                 <input type="submit" value="Post">
             </form>
+            <%  if(locals.user.email =="nik@gmail.com") { %>
+                 <p>this is admin</p>
+                 <a href="/admin/payments">See all payments</a>
+          <%  } %>
             <% } %>
+
         
             <div id="posts-list-container">
                 <ul>
@@ -30,7 +36,7 @@
                 </p>
             <% } %>
         </section>
-        <%- include('_chat_box') -%>
+        <!-- <%- include('_chat_box') -%> -->
 </div>
 
 <!-- importing this script for creating the comments -->
