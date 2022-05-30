@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Phoenix restaurant</title>
 </head>
 <body>
-    <p>All payments</p>
+    
+    
+    <%  if(locals.user.email ==something) { %>
+        <p>All payments</p>
+       
+        
+        <ul>
+            <% for(i=0;i<paymentLogs.length;i++){ %>
+                 <li><div>
+                    <p>Amount : <%=paymentLogs[i].amount/100 %></p>
+                    <p>Order Id :<%=paymentLogs[i].orderId %></p>
+                    <p>receipt Id :<%=paymentLogs[i].receiptId %> </p>
+                    <p>Status : <%=paymentLogs[i].status %> </p>
+                    <p>Address : <%=paymentLogs[i].address %> </p>
+                 </div>  </li>
+         <%   } %>
+       
+        </ul>
+ <%  } else { %>
+      <div style="padding-top:100px; padding-left: 300px;">
+        <h1>HEHEHEHE , you do not have admin access !!! &#129315;</h1>
+      </div>
+ <% } %>
+
 </body>
 </html>
