@@ -6,7 +6,7 @@ module.exports.payments =async function(req, res){
         const results = await paymentDetail.find({});
         
         return res.render('payments', {
-            title: "Pheonix restaurant | Payments",
+            title: "Online food ordering | Payments",
             paymentLogs : results,
             something : someVariable,
         })

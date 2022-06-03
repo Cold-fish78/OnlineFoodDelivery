@@ -20,7 +20,7 @@ module.exports.home = async function(req, res){
         let users = await User.find({});
 
         return res.render('home', {
-            title: "Pheononix restaurant | Home",
+            title: "Online food ordering | Home",
             posts:  posts,
             all_users: users
         });
