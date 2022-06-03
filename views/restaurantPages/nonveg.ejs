@@ -3,7 +3,7 @@
 <head>
 	<title> non veg</title>
 </head>
-<body background="/36d1fbb7-c3d5-4ec6-9cfc-447229596a20 - Copy (2).jpeg" style="background-size:100% 100%" link="#000" alink="#017bf5" vlink="#000">
+<body background="../images/36d1fbb7-c3d5-4ec6-9cfc-447229596a20 - Copy (2).jpeg" style="background-size:100% 100%" link="#000" alink="#017bf5" vlink="#000">
 
 
 <h1 align="center">
@@ -28,7 +28,7 @@
 <u>Name :- </u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Half</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Full</u>
 </font></h2>
 
-<FORM>
+<FORM method="post" action="/order">
 	<font face="lato" color="#000000" size="5">
 	<input type="checkbox">Tandoori Chicken...............................................................160/- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 300/-<br>
 	<input type="checkbox">Afgani Chicken..................................................................180/- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 330/-<br>
@@ -44,6 +44,10 @@
 	<input type="checkbox">Egg Biryani......................................................................... 100/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 190/-<br>
 	<input type="checkbox">Chicken Tikka Roll ............................................................ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100/-<br>
 	<input type="checkbox">Butter Chicken......................................................................260/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 480/-
+	<input type="checkbox"name ="food" value="0" hidden checked><br>
+	<label for="Address" style="margin-left: 20px; padding-top: 50px;">Address :</label>
+	<input type="text" name="address" placeholder="Enter your address" style="width: 350px;" required>
+	<input type="submit" style="margin-left: 150px;"  value="order" >
 	</font>
 </FORM>
 

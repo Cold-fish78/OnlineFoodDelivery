@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 </head>
-<body background="/sweets.jpeg" style="background-size:100% 100%" link="#000" alink="#017bf5" vlink="#000">
+<body background="../images/sweets.jpeg" style="background-size:100% 100%" link="#000" alink="#017bf5" vlink="#000">
 <h1 align="center">
     <font color="663300">
 <span style="font-size: 50px;">&#9752;</span>
@@ -30,7 +30,7 @@
 <u>Name :- </u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Price :-</u>
 </font></h2>
 
-<FORM>
+<FORM method="post" action="/order">
 	<font face="lato" color="#cc0099" size="5">
 	<input type="checkbox">Chhole Bhature ...................................... 50/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2 Pcs)<br>
 	<input type="checkbox">Dokla...................................................... 35/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(250 gm.)<br>
@@ -46,6 +46,10 @@
 	<input type="checkbox">Lassi Sweet/Salty.....................................30/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Per Glass)<br>
 	<input type="checkbox">Cold Drink...............................................MRP<br>
 	<input type="checkbox">Minral Water............................................MRP<br>
+	<input type="checkbox"name ="food" value="0" hidden checked><br>
+	<label for="Address" style="margin-left: 20px; padding-top: 50px;">Address :</label>
+	<input type="text" name="address" placeholder="Enter your address" style="width: 350px;" required>
+	<input type="submit" style="margin-left: 150px;"  value="order" >
 	</font></FORM>
 
 

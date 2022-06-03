@@ -13,9 +13,12 @@ router.get('/sweets',pagesController.sweets);
 router.get('/IceCream',pagesController.IceCream);
 router.get('/shakes',pagesController.shakes);
 router.get('/IndianChaat',pagesController.IndianChaat);
-
-
-
+router.get('/tandoori-paranthe',pagesController.tandooriParathe);
+router.get('/daalSpecial',pagesController.tandooriParathe);
+router.get('/vegetables',pagesController.vegetables);
+router.get('/seasonalVeg',pagesController.seasonalVeg);
+router.get('/southindian',pagesController.southindian);
+// router.get('/daalSpecial',pagesController.tandooriParathe);
 
 
 

@@ -30,3 +30,19 @@ module.exports.shakes = function(req,res){
 module.exports.seasonalVeg = function(req,res){
     return res.render('restaurantPages/seasonalVeg',{title : "Online food ordering"});
 }
+
+module.exports.tandooriParathe = function(req,res){
+    return res.render('restaurantPages/paratheAndBread',{title : "Online food ordering"});
+}
+module.exports.daalSpecial = function(req,res){
+    return res.render('restaurantPages/daalSpecial',{title : "Online food ordering"});
+}
+module.exports.vegetables = function(req,res){
+    return res.render('restaurantPages/vegetables',{title : "Online food ordering"});
+}
+module.exports.southindian = function(req,res){
+    return res.render('restaurantPages/southindian',{title : "Online food ordering"});
+}
+// module.exports.vegetables = function(req,res){
+//     return res.render('restaurantPages/vegetables',{title : "Online food ordering"});
+// }
