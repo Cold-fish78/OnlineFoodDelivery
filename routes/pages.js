@@ -18,10 +18,9 @@ router.get('/daalSpecial',pagesController.tandooriParathe);
 router.get('/vegetables',pagesController.vegetables);
 router.get('/seasonalVeg',pagesController.seasonalVeg);
 router.get('/southindian',pagesController.southindian);
-// router.get('/daalSpecial',pagesController.tandooriParathe);
-
-
-
+router.get('/homeimages',pagesController.homeimages);
+router.get('/about-us',pagesController.aboutus);
+router.get('/contact-us',pagesController.contactus);
 
 
 module.exports = router;

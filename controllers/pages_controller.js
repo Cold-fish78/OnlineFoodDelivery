@@ -43,6 +43,12 @@ module.exports.vegetables = function(req,res){
 module.exports.southindian = function(req,res){
     return res.render('restaurantPages/southindian',{title : "Online food ordering"});
 }
-// module.exports.vegetables = function(req,res){
-//     return res.render('restaurantPages/vegetables',{title : "Online food ordering"});
-// }
+module.exports.homeimages = function(req,res){
+    return res.render('restaurantPages/homeimages',{title : "Online food ordering"});
+}
+module.exports.aboutus = function(req,res){
+    return res.render('restaurantPages/aboutus',{title : "Online food ordering"});
+}
+module.exports.contactus = function(req,res){
+    return res.render('restaurantPages/contactus',{title : "Online food ordering"});
+}
